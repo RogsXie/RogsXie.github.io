@@ -403,7 +403,7 @@ function updateAboutSection(t) {
     // Get all about cards
     const aboutCards = document.querySelectorAll('.about-card');
     
-    if (aboutCards.length >= 3) {
+    if (aboutCards.length >= 4) {
         // First card: Research Focus
         const firstCard = aboutCards[0];
         const firstTitle = firstCard.querySelector('h4');
@@ -455,6 +455,19 @@ function updateAboutSection(t) {
         
         if (thirdText) {
             thirdText.textContent = t.about.technicalText;
+        }
+        const fourthCard = aboutCards[3];
+        const fourthTitle = fourthCard.querySelector('h4');
+        const eduParas = fourthCard.querySelectorAll('p');
+        
+        if (fourthTitle) {
+            const icon = fourthTitle.querySelector('i');
+            fourthTitle.innerHTML = `${icon ? icon.outerHTML : ''} ${t.about.education}`;
+        }
+        
+        if (eduParas.length >= 2) {
+            eduParas[0].textContent = t.about.edu1;
+            eduParas[1].textContent = t.about.edu2;
         }
     }
 }
