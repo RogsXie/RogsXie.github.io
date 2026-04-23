@@ -166,7 +166,7 @@ const translations = {
         // Services Section
         services: {
             title: "学术服务",
-            subtitle: "我担任图像处理、遥感和人工智能领域多个知名期刊的审稿人。",
+            // subtitle: "我担任图像处理、遥感和人工智能领域多个知名期刊的审稿人。",
             journalReviewer: "期刊审稿人"
         },
         // Gallery Section
