@@ -82,20 +82,22 @@
 /* 奖项徽章的字体也要稍微调大，并增加间距 */
 .award-badge {
     font-size: 0.85rem !important;
-    padding: 4px 10px !important;
-    margin-left: 15px;
-    white-space: nowrap; /* 防止奖项在中间断开 */
+    padding: 4px 12px !important;
+    margin-left: 0;         /* 移除固定的左边距，改由父级gap控制 */
+    white-space: normal;    /* 允许长奖项文字内部也换行 */
+    border-radius: 50px !important; /* 变成圆角胶囊状，更好看 */
+    text-align: right;
 }
 
 /* 手机端适配：如果屏幕太窄，奖项自动换行 */
 @media (max-width: 768px) {
     .edu-item {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; /* 手机端全部居左对齐 */
     }
     .award-badge {
-        margin-left: 0;
-        margin-top: 8px;
+        margin-top: 5px;
+        text-align: left; /* 手机端奖项文字居左 */
     }
 }
 
