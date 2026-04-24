@@ -147,8 +147,8 @@ const translations = {
             technicalExpertise: "技术特长",
             technicalText: "深度学习、卷积神经网络、Transformer架构、选择性状态空间模型、分类、变化检测、多尺度特征融合",
             education: "教育背景",
-            edu1: "江西水利电力大学 · 大数据技术与工程 · 硕士 (2024.09 - 2027.06)",
-            edu2: "江西师范大学 · 软件工程 · 学士 (2020.09 - 2024.06)"
+            edu1: "江西水利电力大学 · 信息工程学院 · 大数据技术与工程 · 硕士 (2024.09 - 2027.06)",
+            edu2: "江西师范大学 · 软件学院 · 软件工程 · 学士 (2020.09 - 2024.06)"
         },
         // Publications Section
         publications: {
